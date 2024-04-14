@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="inscription.css" type="text/css" />
+    <title>Inscription</title>
+  </head>
+
+  <body class="=body">
+    <header class="=header">
+      <h1 class="=header h1">
+        Nouvelle <br />
+        Conférence
+      </h1>
+
+      <h3 class="header h3">24&ndash;25 mars 2024 &mdash; Ottawa, ON</h3>
+
+      <nav>
+        <ul class="nav ul">
+          <li> <a href="index.html">Acceuil</a></li>
+          <!--
+          -->
+          <li><a href="conferencier.html">Conférenciers</a></li>
+          <!--
+          -->
+          <li><a href="programme.html">Programme</a></li>
+          <!--
+          -->
+          <li><a href="venue.html">Venue</a></li>
+          <!--
+          -->
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section1">
+      <div >
+        <h1 >Inscription</h1>
+
+        <p >
+          Suspendisse vel leo porttitor, fringilla turpis in, ultrices eros.
+          Integer sit amet interdum lacus. Nunc tempor in neque ut sagittis.
+          Suspendisse potenti. Vestibulum vestibulum augue vel nulla
+          scelerisque, sodales vestibulum dolor auctor.
+        </p>
+      </div>
+    </section>
+
+    <section  class="section2"  >
+      <div >
+        <section >
+          <h2 >Achat de passe pour la conférence</h2>
+          <h5 >99$ / PLACE</h5>
+
+          <p>
+            In gravida fringilla fringilla. Ut at mi massa. Curabitur sed
+            rhoncus orci, sed pulvinar lectus. Praesent tempor nisi id facilisis
+            congue. Nullam eu convallis turpis, vel mattis turpis. In cursus,
+            augue in feugiat posuere, tortor velit congue mi, at volutpat nibh
+            turpis a tellus.
+          </p>
+
+          <h4 >Bienvenue !</h4>
+
+          <ul>
+            <li>Cras eu est sit amet elit placerat venenatis.</li>
+            <li>Proin bibendum justo vestibulum accumsan rhoncus.</li>
+            <li>Pellentesque gravida risus id eros aliquet tempor.</li>
+            <li>Sed in odio at dolor posuere laoreet.</li>
+            <li>Nullam fermentum leo at dignissim varius.</li>
+          </ul>
+        </section>
+        
+        <div class="container">
+          <form action="#" method="post" id="inscriptionForm">
+            <fieldset class="questionnaire">
+              <label class="Nom">
+                Nom
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nom complet"
+                  required
+                />
+              </label>
+    
+              <label class="courriel">
+                Courriel
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Adresse courriel"
+                  required
+                />
+              </label>
+    
+              <label>
+                <strong>Code postal </strong>
+                 <input type="text" size="10" maxlength="3"
+                placeholder="Code postal" required>
+            </label>
+    
+              <label class="telephone">
+                Téléphone
+                <input
+                  type="tel"
+                  name="phone"
+                  pattern="\+1\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                  placeholder="+1(XXX) XXX-XXXX"
+                  required
+                />
+              </label>
+    
+              <label>
+                <strong class="place">Province : </strong>
+                <select size="1" name="province">
+                    <option>Alberta</option>
+                    <option>Ontario</option>
+                    <option>Quebec</option>
+                    <option>Nouvelle-Ecosse</option>
+                    <option>Nouveau-Brunswick</option>
+                    <option>Manitoba</option>
+                    <option>Colombie-Britanique</option>
+                </select>
+            </label>
+    
+              <label class="radio-buttons">
+                Choix d'options:
+                <br>
+                <input type="radio" name="options" value="option1" required> Option 1
+                <br>
+                <input type="radio" name="options" value="option2"> Option 2
+                <br>
+                <input type="radio" name="options" value="option3"> Option 3
+              </label>
+    
+              <label class="checkboxes">
+                Choix de préférence:
+                <br>
+                <input type="checkbox" name="preference1"> Préférence 1
+                <br>
+                <input type="checkbox" name="preference2"> Préférence 2
+                <br>
+                <input type="checkbox" name="preference3"> Préférence 3
+              </label>
+    
+              <label class="commentaire">
+                Commentaire
+                <textarea name="comments"></textarea>
+              </label>
+            </fieldset>
+    
+            <input
+              class="btn btn-default"
+              type="submit"
+              name="submit"
+              value="Acheter"
+            />
+            <input class="btn btn-default" type="reset" value="Effacer">
+          </form>
+        </div>
+      </section>
+    
+      <div class="container">
+          <form action="#" method="post" id="inscriptionForm">
+              <!-- Vos champs de formulaire ici -->
+          </form>
+      </div>
+      
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="modal-content"></div>
+          </div>
+      </div>
+      
+      <script>
+          // Récupération du formulaire
+          var form = document.getElementById('inscriptionForm');
+      
+          // Écouteur d'événement pour le soumission du formulaire
+          form.addEventListener('submit', function(event) {
+              // Annulation de l'envoi du formulaire
+              event.preventDefault();
+      
+              // Récupération des valeurs des champs
+              var formData = new FormData(form);
+              var formValues = {};
+              formData.forEach(function(value, key){
+                  formValues[key] = value;
+              });
+      
+              // Construction du contenu du modal
+              var modalContent = '<h2>Données saisies :</h2><ul>';
+              for (var key in formValues) {
+                  modalContent += '<li><strong>' + key + ':</strong> ' + formValues[key] + '</li>';
+              }
+              modalContent += '</ul>';
+      
+              // Affichage du modal
+              var modal = document.getElementById('myModal');
+              var modalContentElement = document.getElementById('modal-content');
+              modalContentElement.innerHTML = modalContent;
+              modal.style.display = "block";
+      
+              // Fermeture du modal lorsque l'utilisateur clique sur la croix
+              var closeBtn = document.getElementsByClassName("close")[0];
+              closeBtn.onclick = function() {
+                  modal.style.display = "none";
+              }
+          });
+      </script>
+      
+      </body>
+      </html>
+      
+      <footer class="footer">
+        <small class="footer small">Nouvelle Conférence</small>
+    
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="conferencier.html">Conférenciers</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+          </ul>
+        </nav>
+    
+    
+     
+      <script>
+      
+          
+          alert(modalContent);
+        ;
+      </script>
+  <footer class="footer">
+    <small class="footer small">Nouvelle Conférence</small>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="conferencier.html">Conférenciers</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+      </ul>
+    </nav>
+  </footer>
+  </body>
+</html>

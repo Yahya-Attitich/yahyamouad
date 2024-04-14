@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="document html" type="text/css" />
+<h2>Titre niveau 2 - Statistiques </h2>
+<table>
+<tr>
+    <th>Pays</th>
+    <th>Nombre d'acces</th>
+</tr>
+<tr>
+    <td>France</td>
+    <td>USA</td>
+    <td>Inconnu</td>
+    <td>Canada</td>
+    <td>Belgique</td>
+    <td>Suisse</td>
+</tr>
+<tr>
+    <td>25105</td>
+    <td>19765</td>
+    <td>9011</td>
+    <td>1106</td>
+    <td>912</td>
+    <td>719</td>
+</tr>
+</table>
+<p>Statistiques d'accès </p>
+<h3>Titre niveau3- Signature</h3>
+<img src="C:\Users\shebo\OneDrive\Bureau\la-cite-collegiale-ontario.jpg"/>
+<a href="document html">Haut de la page</a>
