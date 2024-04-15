@@ -1,0 +1,174 @@
+
+*, ::after, ::before {
+  transition: all .2s;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+main {
+  width: 900px;
+  background-color: silver;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: #b0d8b6; 
+ background-color: #1F3D51;
+  padding: 10px;
+  color: white;
+  
+}
+header h1 {
+    font-weight: 1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header h3 {
+  color: gray;
+}
+header a{
+  color:white;
+  text-decoration-line: none;
+}
+h3 {
+  margin: 0;
+  align-self: flex-end; 
+}
+  h1 {
+    margin: 0;
+  }
+nav {
+  margin-top: 0px; 
+  align-self: flex-end; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 15px;
+}
+.creation{
+  display: grid;
+  justify-content: center;
+  align-items:center;
+  
+  background-color: #1F3D51;
+  color: white;
+  
+  text-align: center;
+}
+
+.creation h2 {
+  
+  text-align: center;
+  color: gray;
+  font-family: 'Courier New', monospace;
+ font-weight: 100;
+ font-size: xx-large;
+}
+
+.creation p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-style: inherit;
+    
+}
+.creation button{
+    color: white;
+    line-height: 4;
+    border:1 white;
+    background-color: #1F3D51;
+border-color:white;
+margin: 30px 12pc;
+border-radius: 5px;
+
+}
+.milieu{
+  display: flex;
+  max-width:700px;
+  margin:  auto;
+  
+}
+.milieu img  {
+  width: 15em;
+  height: 15em;
+  
+}
+.milieu p ,img , h5  {
+  margin: 10px;
+  padding: 5px;
+}
+.milieu h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #1F3D51;
+
+}
+.milieu   h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: 100;
+  color: #1F3D51;
+  margin: 10px;
+  padding: 5px;
+}
+.milieu p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: 100;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #b0d8b6; 
+ background-color: #1F3D51;
+  padding: 10px;
+  color: white;
+}
+footer a {
+  color:white;
+  text-decoration-line: none;
+}
+nav {
+  margin-top: 0px; 
+  align-self: flex-end; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+nav li {
+  margin-right: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+
+.inscription-btn {
+  background-color: #1F3D51;
+}
+
+.inscription-btn:hover {
+  cursor: pointer;
+  color:#1F3D51;
+  background-color: white;
+  border-color: #1F3D51;
+}

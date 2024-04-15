@@ -1,0 +1,129 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background: #b0d8b6; /* Cor de fundo inicial */
+   background-color: #1F3D51;
+    padding: 10px;
+    color: white;
+    
+  }
+  header h1 {
+      font-weight: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ 
+header a{
+    color:white;
+    text-decoration-line: none;
+  }
+  footer a {
+    color:white;
+    text-decoration-line: none;
+  }
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: arial;
+  margin:0;
+
+}
+.centre{ 
+    margin:15px;
+}
+.Programme  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; 
+  background: linear-gradient(to right , #b0d8b6 40%, #e5eacc 90%);
+  color: white;
+  text-align: center;
+}
+.Programme div {
+  max-width: 900px; /* Ajuste conforme necessário para a largura desejada */
+  
+}
+.Programme h1{
+    color:rgb(150, 184, 150);
+    font-weight: 100;
+    font-size: x-large;
+}
+.Programme p {
+  margin-top: 2px;
+  text-align: center;
+} 
+.conference-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 200px;
+    padding-top: 0;
+    padding-bottom: 0
+   } 
+  .conference-section p{
+    padding-right: 10pc;
+  }
+  h2{
+    color:rgb(150, 184, 150);
+    font-weight: 100;
+  }
+h3 {
+  margin: 0;
+  align-self: flex-end; /* Alinhado à direita */
+  color: gray;
+}
+h5{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 100;
+}
+p{
+    color: gray;
+}
+
+nav {
+  margin-top: 0px; /* Ajuste conforme necessário */
+  align-self: flex-end; /* Alinhado à direita */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+
+nav li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #b0d8b6; /* Cor de fundo inicial */
+   background-color: #1F3D51;
+    padding: 10px;
+    color: white;
+  }
+  fieldset{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  border-width: 1px;
+  color: gray;
+  }
+  img{
+   width: 150px;
+   height: 150px;
+   margin-top: 60px;
+   border-radius: 150px;
+  }
+  a{
+    color: gray;
+    text-decoration-line: none;
+  }
+  
+ 

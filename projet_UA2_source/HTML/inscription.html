@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/inscription.css" type="text/css" />
+    <title>Inscription</title>
+  </head>
+
+  <body class="=body">
+    <header class="=header">
+      <h1 class="=header h1">
+        Nouvelle <br />
+        Conférence
+      </h1>
+
+      <h3 class="header h3">24&ndash;25 mars 2024 &mdash; Ottawa, ON</h3>
+
+      <nav>
+        <ul class="nav ul">
+          <li> <a href="index.html">Acceuil</a></li>
+          <!--
+          -->
+          <li><a href="conferencier.html">Conférenciers</a></li>
+          <!--
+          -->
+          <li><a href="programme.html">Programme</a></li>
+          <!--
+          -->
+          <li><a href="venue.html">Venue</a></li>
+          <!--
+          -->
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section1">
+      <div >
+        <h1>Inscription</h1>
+
+        <p>
+          Suspendisse vel leo porttitor, fringilla turpis in, ultrices eros.
+          Integer sit amet interdum lacus. Nunc tempor in neque ut sagittis.
+          Suspendisse potenti. Vestibulum vestibulum augue vel nulla
+          scelerisque, sodales vestibulum dolor auctor.
+        </p>
+      </div>
+    </section>
+
+    <section  class="section2"  >
+      <div >
+        <section >
+          <h2 >Achat de passe pour la conférence</h2>
+          <h5 >99$ / PLACE</h5>
+
+          <p>
+            In gravida fringilla fringilla. Ut at mi massa. Curabitur sed
+            rhoncus orci, sed pulvinar lectus. Praesent tempor nisi id facilisis
+            congue. Nullam eu convallis turpis, vel mattis turpis. In cursus,
+            augue in feugiat posuere, tortor velit congue mi, at volutpat nibh
+            turpis a tellus.
+          </p>
+
+          <h4 >Bienvenue !</h4>
+
+          <ul>
+            <li>Cras eu est sit amet elit placerat venenatis.</li>
+            <li>Proin bibendum justo vestibulum accumsan rhoncus.</li>
+            <li>Pellentesque gravida risus id eros aliquet tempor.</li>
+            <li>Sed in odio at dolor posuere laoreet.</li>
+            <li>Nullam fermentum leo at dignissim varius.</li>
+          </ul>
+        </section>
+        <!--
+
+       
+
+        -->
+        <form action="#" method="post" >
+          <fieldset class="questionnaire">
+            <label class="Nom">
+              Nom
+              <input
+                type="text"
+                name="name"
+                placeholder=" Nom complet"
+                required
+              />
+            </label>
+
+            <label class="courriel">
+              Courriel
+              <input
+                type="email"
+                name="email"
+                placeholder=" Addresse courriel"
+                required
+              />
+            </label >
+
+            <label class="phone-number">
+              Numero de tel
+              <input
+                type="tel"
+                name="phone-number"
+                pattern="\+1\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                placeholder="+1(XXX) XXX-XXXX"          required
+              />
+            </label >
+
+            <label class="place">
+              Nombre de places
+              <select name="quantity" required>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
+
+            <label class="commentaire">
+              Commentaire
+              <textarea name="comments"></textarea>
+            </label>
+          </fieldset>
+
+          <input
+            class="styled-btn"
+            type="submit"
+            name="submit"
+            value="Acheter"
+          />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small class="footer small">Nouvelle Conférence</small>
+
+      <nav>
+        <ul>
+          <li> <a href="index.html">Acceuil</a></li>
+          <!--
+          -->
+          <li><a href="conferencier.html">Conférenciers</a></li>
+          <!--
+          -->
+          <li><a href="programme.html">Programme</a></li>
+          <!--
+          -->
+          <li><a href="venue.html">Venue</a></li>
+          <!--
+          -->
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+
+  <script src="../JS/main.js"></script>
+</html>
